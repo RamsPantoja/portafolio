@@ -157,7 +157,6 @@
   height: 400px;
   padding: 1em;
   color: #fafafa;
-  box-shadow: 0 0 11px #564b8e, 0 0 5px;
   transition: 0.2s ease;
 }
 
@@ -166,12 +165,9 @@
 }
 
 .skill_card:hover {
-  transform: scale(1.05);
-  border: 1px solid #564b8e;
-  box-shadow: 0 0 11px #f7f26e, 0 0 5px;
+  transform: scale(1.03);
+  box-shadow: 0 0 11px #564b8e, 0 0 5px;
 }
-
-
 
 .footer {
   width: 100%;
@@ -179,4 +175,29 @@
   border-radius: 5px;
   justify-content: center;
   align-items: center;
+}
+
+
+@media(max-width: 1000px) {
+  .headerTitle_container {
+    flex-direction: column-reverse;
+  }
+
+  .aboutMe {
+    flex-direction: column-reverse;
+  }
+
+  .bunny_tech {
+    display: none;
+  }
+
+  .skills_set {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 630px) {
+  .skills_set {
+    grid-template-columns: auto;
+  }
 }

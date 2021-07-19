@@ -34,7 +34,10 @@ export default function Home() {
             <p>Desarrollo e integración de REST-APIs, utilizando Express.js como servidor, y GraphQl(Apollo) como lenguaje query para la implementación de APIs.</p>
             <p>Apasionado por la tecnología e ingeniería.</p>
           </div>
-          <Image src='/diseno-web.svg' alt='developer-icon' width={300} height={300}/>
+          <div className={styles.bunny_tech}>
+            <Image src='/diseno-web.svg' alt='developer-icon' width={300} height={300}/>
+          </div>
+          
         </div>
         <div className={styles.skillsContainer}>
           <h2>Skills & Tecnologías</h2>
@@ -66,6 +69,10 @@ export default function Home() {
             <div className={styles.skill_card}>
               <Image src='/nextjs-icon.svg' alt='Nextjs-icon' width={150} height={100}/>
               <p><a href='https://nextjs.org/' style={{color: '#ffffff', textDecoration: 'underline'}}>Next.js</a> es un marco de desarrollo de código abierto construido sobre Node.js que permite funcionalidades de aplicaciones web basadas en React, como la representación del lado del servidor y la generación de sitios web estáticos.</p>
+            </div>
+            <div className={styles.skill_card}>
+              <Image src='/git-icon.svg' alt='git-icon' width={150} height={100}/>
+              <p><a href='https://git-scm.com/' style={{color: '#f4511e', textDecoration: 'underline'}}>Git</a> es un software de control de versiones, pensando en la eficiencia, la confiabilidad y compatibilidad del mantenimiento de versiones de aplicaciones cuando estas tienen un gran número de archivos de código fuente.</p>
             </div>
           </div>
         </div>
