@@ -14,7 +14,7 @@ export default function Home() {
         <div className={styles.headerTitle_container}>
           <div className={styles.headerTitle}>
             <p>Bienvenido a:</p>
-            <h1>RamsPantoja's Portafolio.</h1>
+            <h1>RamsPantoja Portafolio.</h1>
           </div>
           <span>{'</>'}</span>
         </div>
@@ -31,7 +31,7 @@ export default function Home() {
             <p>Como ingeniero mecánico: Diseño mecánico, Inventor, Solidworks, Programacion PLC, y automatización.</p>
             <p>Me gusta aprender, y actualizarme para desarrollar habilidades que aporten soluciones a la industria.</p>
             <p>He desarrollado aplicaciones web y páginas web durante 2 años, haciendo uso de tecnologías web como lo son: ExpressJs, Node.js, GraphQL enfocadas en el Backend, y ReactJs, Next.js, MeterialUI enfocadas en el Frontend. Utilizando Javascript como lenguaje de principio a fin.</p>
-            <p>Desarrollo e integración de REST-API's, utilizando Express.js como servidor, y GraphQl(Apollo) como lenguaje query para la implementación de API's.</p>
+            <p>Desarrollo e integración de REST-APIs, utilizando Express.js como servidor, y GraphQl(Apollo) como lenguaje query para la implementación de APIs.</p>
             <p>Apasionado por la tecnología e ingeniería.</p>
           </div>
           <Image src='/diseno-web.svg' alt='developer-icon' width={300} height={300}/>
