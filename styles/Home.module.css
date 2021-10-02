@@ -219,6 +219,12 @@
   transition: 0.2s ease;
 }
 
+.projects_card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 11px #564b8e, 0 0 5px;
+  cursor: pointer;
+}
+
 .projects_cardImage {
   display: flex;
   position: relative;

@@ -1,8 +1,11 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.css';
+import { useRouter } from 'next/router';
 
 export default function Home() {
+  const router = useRouter();
+
   return (
     <div className={styles.container}>
       <Head>
@@ -79,7 +82,7 @@ export default function Home() {
         <div className={styles.projects}>
           <h2>Proyectos</h2>
           <div className={styles.projects_set}>
-            <div className={styles.projects_card}>
+            <div className={styles.projects_card} onClick={() => router.push('https://profepaco.com/')}>
               <div className={styles.projects_cardImage}>
                 <Image className={styles.projectImage} src='/profepaco_logo.png' alt='profe paco' layout='fill' objectFit='scale-down'/>
               </div>
@@ -93,7 +96,7 @@ export default function Home() {
                 <span>Estado: Producción</span>
               </div>
             </div>
-            <div className={styles.projects_card}>
+            <div className={styles.projects_card} onClick={() => router.push('https://waak.vercel.app/')}>
               <div className={styles.projects_cardImage}>
                 <Image className={styles.projectImage} src='/logotipo_maak.svg' alt='logo maak' layout='fill' objectFit='scale-down' />
               </div>
@@ -107,7 +110,7 @@ export default function Home() {
                 <span>Estado: Desarrollo</span>
               </div>
             </div>
-            <div className={styles.projects_card}>
+            <div className={styles.projects_card} onClick={() => router.push('https://r3d-1.hubspotpagebuilder.com/r3d-crea-fabrica-conecta')}>
               <div className={styles.projects_cardImage}>
                 <Image className={styles.projectImage} src='/IMAGOTIPO-blanco.svg' alt='logo maak' layout='fill' objectFit='scale-down' />
               </div>
