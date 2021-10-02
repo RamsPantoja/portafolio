@@ -19,7 +19,7 @@ export default function Home() {
           <span>{'</>'}</span>
         </div>
         <div className={styles.waveContainer}>
-          <Image src='/wave.svg' alt='wave' layout='fill' objectFit='cover' />
+          <Image src='/wave.svg' alt='wave' layout='fill' objectFit='cover'/>
         </div>
       </header>
       <main className={styles.main}>
@@ -28,6 +28,7 @@ export default function Home() {
             <h2>Sobre mí</h2>
             <p>Ingenierio mecánico y desarrollador full stack, desarrollado en el ámbito de diseño(mecánico) y web applications, respectivamente.</p>
             <p>Como desarollador web: Express.js, Node.js, ReactJs, NextJs, MongoDB & GraphQl.</p>
+            <p>Amazon Web Services: EC2, Lambda, Amplify, API GATEWAY.</p>
             <p>Como ingeniero mecánico: Diseño mecánico, Inventor, Solidworks, Programacion PLC, y automatización.</p>
             <p>Me gusta aprender, y actualizarme para desarrollar habilidades que aporten soluciones a la industria.</p>
             <p>He desarrollado aplicaciones web y páginas web durante 2 años, haciendo uso de tecnologías web como lo son: ExpressJs, Node.js, GraphQL enfocadas en el Backend, y ReactJs, Next.js, MeterialUI enfocadas en el Frontend. Utilizando Javascript como lenguaje de principio a fin.</p>
@@ -35,9 +36,8 @@ export default function Home() {
             <p>Apasionado por la tecnología e ingeniería.</p>
           </div>
           <div className={styles.bunny_tech}>
-            <Image src='/diseno-web.svg' alt='developer-icon' width={300} height={300}/>
+            <Image src='/coder.svg' alt='developer-icon' width={600} height={600}/>
           </div>
-          
         </div>
         <div className={styles.skillsContainer}>
           <h2>Skills & Tecnologías</h2>
@@ -73,6 +73,52 @@ export default function Home() {
             <div className={styles.skill_card}>
               <Image src='/git-icon.svg' alt='git-icon' width={150} height={100}/>
               <p><a href='https://git-scm.com/' style={{color: '#f4511e', textDecoration: 'underline'}}>Git</a> es un software de control de versiones, pensando en la eficiencia, la confiabilidad y compatibilidad del mantenimiento de versiones de aplicaciones cuando estas tienen un gran número de archivos de código fuente.</p>
+            </div>
+          </div>
+        </div>
+        <div className={styles.projects}>
+          <h2>Proyectos</h2>
+          <div className={styles.projects_set}>
+            <div className={styles.projects_card}>
+              <div className={styles.projects_cardImage}>
+                <Image className={styles.projectImage} src='/profepaco_logo.png' alt='profe paco' layout='fill' objectFit='scale-down'/>
+              </div>
+              <div className={styles.project_inf}>
+                <p className={styles.project_title}>Profe Paco</p>
+                <p className={styles.project_description}>Proyecto Full Stack (MongoDB, ExpressJs, Next.js (React Framework), NodeJS & Apollo GraphQL).</p>
+                <p className={styles.project_description}>
+                  Aplicación web para vender y administrar los cursos vendidos a los usuarios. 
+                  Se implemento Mercado Pago como pasarela de pago.
+                </p>
+                <span>Estado: Producción</span>
+              </div>
+            </div>
+            <div className={styles.projects_card}>
+              <div className={styles.projects_cardImage}>
+                <Image className={styles.projectImage} src='/logotipo_maak.svg' alt='logo maak' layout='fill' objectFit='scale-down' />
+              </div>
+              <div className={styles.project_inf}>
+                <p className={styles.project_title}>Maak</p>
+                <p className={styles.project_description}>Proyecto Full Stack (MongoDB, ExpressJs, Next.js (React Framework), NodeJS & Apollo GraphQL, Cardano Blockchain).</p>
+                <p className={styles.project_description}>
+                  Plataforma NFT & Stake Pool basado en el blockchain CARDANO, creada para permitir que las personas delegen sus ADAs en el Pool 
+                  y tambien desarrollen sus NFT´s de manera sencilla, asi puedan venderlos.
+                </p>
+                <span>Estado: Desarrollo</span>
+              </div>
+            </div>
+            <div className={styles.projects_card}>
+              <div className={styles.projects_cardImage}>
+                <Image className={styles.projectImage} src='/IMAGOTIPO-blanco.svg' alt='logo maak' layout='fill' objectFit='scale-down' />
+              </div>
+              <div className={styles.project_inf}>
+                <p className={styles.project_title}>R3D</p>
+                <p className={styles.project_description}>Proyecto Full Stack (MySql, Spring Boot, Next.js (React Framework), Java, AWS services).</p>
+                <p className={styles.project_description}>
+                  Plataforma encargada de conectar a creadores y fabricantes, en la industria de la manufactura y diseño.
+                </p>
+                <span>Estado: Desarrollo</span>
+              </div>
             </div>
           </div>
         </div>
