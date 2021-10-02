@@ -115,6 +115,7 @@
   color: #fafafa;
   text-align: start;
   cursor: default;
+  font-size: 14px;
 }
 
 .skillsContainer {
@@ -158,6 +159,7 @@
   padding: 1em;
   color: #fafafa;
   transition: 0.2s ease;
+  font-size: 14px;
 }
 
 .skill_card > p {
@@ -234,6 +236,16 @@
 
 .projectImage {
   border-radius: 5px 5px 0 0;
+}
+
+.project_title {
+  font-size: 20px;
+  text-shadow: 0 0 11px #f376b7, 0 0 5px;
+  font-weight: bold;
+}
+
+.project_description {
+  font-size: 14px;
 }
 
 .footer {
